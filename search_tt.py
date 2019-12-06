@@ -16,7 +16,7 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
-maxTweets = 200  # Some arbitrary large number
+maxTweets = 1000000000  # Some arbitrary large number
 tweetsPerQry = 100  # this is the max the API permits
 max_id = None
 tweetCount = 0
